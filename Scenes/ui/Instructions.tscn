@@ -1,0 +1,40 @@
+[gd_scene load_steps=2 format=3 uid="uid://c2kx4ajixb5wc"]
+
+[ext_resource type="Script" uid="uid://bep2awisi3qlb" path="res://scripts/instructions.gd" id="1_p7uw4"]
+
+[node name="Instructions" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_p7uw4")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 533.0
+offset_bottom = 427.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 99.0
+offset_top = 104.0
+offset_right = 439.0
+offset_bottom = 244.0
+alignment = 1
+
+[node name="Como Jogar" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Instruções" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Setas ou A/D para mover
+Barra de Espaço ou W para pular
+Tecla K ou clique para atirar
+Colete itens, evite inimigos e vença as fases!"
+
+[node name="BackButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+
+[connection signal="pressed" from="VBoxContainer/BackButton" to="." method="_on_back_button_pressed"]
