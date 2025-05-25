@@ -135,9 +135,11 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_453mm"]
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_eaotn"]
+height = 26.8854
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" groups=["player"]]
+collision_mask = 11
 script = ExtResource("1_mab2k")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -145,4 +147,6 @@ sprite_frames = SubResource("SpriteFrames_mab2k")
 animation = &"idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CapsuleShape2D_453mm")
+position = Vector2(0, -1)
+rotation = 0.692501
+shape = SubResource("CapsuleShape2D_eaotn")

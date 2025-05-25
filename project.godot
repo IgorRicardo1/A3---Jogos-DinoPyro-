@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="A3 - Jogos"
-run/main_scene="uid://c2kx4ajixb5wc"
+run/main_scene="uid://b5op1rkoxqbk2"
 config/features=PackedStringArray("4.4", "Mobile")
 config/icon="res://icon.svg"
 

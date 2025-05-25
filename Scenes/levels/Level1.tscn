@@ -1,7 +1,13 @@
-[gd_scene load_steps=5 format=4 uid="uid://b17pwlidstlrj"]
+[gd_scene load_steps=8 format=4 uid="uid://b17pwlidstlrj"]
 
 [ext_resource type="Texture2D" uid="uid://2mg6ujmh8w3g" path="res://sprites/Tilesets/1 - Grassland/Terrain (16 x 16).png" id="1_7xv87"]
 [ext_resource type="PackedScene" uid="uid://bfemkv0rj38aw" path="res://entities/player/Player.tscn" id="2_7t8uo"]
+[ext_resource type="PackedScene" uid="uid://bdc7wk4j5sgak" path="res://Scenes/ui/HUD.tscn" id="3_7t8uo"]
+[ext_resource type="PackedScene" uid="uid://d218yv00l3w8v" path="res://entities/enemies/enemy.tscn" id="4_v4je3"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_v4je3"]
+friction = 0.15
+bounce = 0.1
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_v4je3"]
 texture = ExtResource("1_7xv87")
@@ -71,6 +77,8 @@ texture = ExtResource("1_7xv87")
 
 [sub_resource type="TileSet" id="TileSet_xphxn"]
 physics_layer_0/collision_layer = 1
+physics_layer_0/collision_mask = 0
+physics_layer_0/physics_material = SubResource("PhysicsMaterial_v4je3")
 sources/0 = SubResource("TileSetAtlasSource_v4je3")
 
 [node name="Level1" type="Node2D"]
@@ -83,3 +91,8 @@ use_kinematic_bodies = true
 [node name="Player" parent="." instance=ExtResource("2_7t8uo")]
 
 [node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="HUD" parent="." instance=ExtResource("3_7t8uo")]
+
+[node name="Enemy" parent="." instance=ExtResource("4_v4je3")]
+position = Vector2(111, 130)
