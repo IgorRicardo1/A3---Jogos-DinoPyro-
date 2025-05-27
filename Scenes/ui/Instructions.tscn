@@ -3,38 +3,45 @@
 [ext_resource type="Script" uid="uid://bep2awisi3qlb" path="res://scripts/instructions.gd" id="1_p7uw4"]
 
 [node name="Instructions" type="Control"]
+custom_minimum_size = Vector2(288, 208)
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
 script = ExtResource("1_p7uw4")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 0
-offset_right = 533.0
-offset_bottom = 427.0
+offset_right = 288.0
+offset_bottom = 208.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
+custom_minimum_size = Vector2(288, 208)
 layout_mode = 0
-offset_left = 99.0
-offset_top = 104.0
-offset_right = 439.0
-offset_bottom = 244.0
+offset_right = 40.0
+offset_bottom = 40.0
 alignment = 1
 
-[node name="Como Jogar" type="Label" parent="VBoxContainer"]
+[node name="How to play" type="Label" parent="VBoxContainer"]
 layout_mode = 2
+text = "Como Jogar:"
+horizontal_alignment = 1
 
-[node name="Instruções" type="Label" parent="VBoxContainer"]
+[node name="Instructions" type="Label" parent="VBoxContainer"]
+custom_minimum_size = Vector2(288, 0)
 layout_mode = 2
 text = "Setas ou A/D para mover
 Barra de Espaço ou W para pular
 Tecla K ou clique para atirar
 Colete itens, evite inimigos e vença as fases!"
+autowrap_mode = 3
 
 [node name="BackButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
+text = "VOLTAR"
 
 [connection signal="pressed" from="VBoxContainer/BackButton" to="." method="_on_back_button_pressed"]

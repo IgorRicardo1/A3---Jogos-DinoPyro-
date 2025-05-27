@@ -1,0 +1,203 @@
+[gd_scene load_steps=16 format=4 uid="uid://qrhsmtg2fjfx"]
+
+[ext_resource type="Texture2D" uid="uid://ciigk2hu4q3mc" path="res://sprites/Tilesets/2 - Autumn Forest/Background parts/6 - Distant_trees.png" id="1_cd1b4"]
+[ext_resource type="Texture2D" uid="uid://bgo3dlhqr28el" path="res://sprites/Tilesets/2 - Autumn Forest/Background parts/5 - Tree_row_BG_2.png" id="2_iu14f"]
+[ext_resource type="Texture2D" uid="uid://bfhn7umv2tljj" path="res://sprites/Tilesets/2 - Autumn Forest/Background parts/4 - Tree_row_BG_1.png" id="3_ryjje"]
+[ext_resource type="Texture2D" uid="uid://cygngqpwwudf2" path="res://sprites/Tilesets/2 - Autumn Forest/Background parts/3 - Bottom_leaf_piles.png" id="4_q3k16"]
+[ext_resource type="Texture2D" uid="uid://dp42l5x6frlnw" path="res://sprites/Tilesets/2 - Autumn Forest/Background parts/2 - Trees.png" id="5_gljgr"]
+[ext_resource type="Texture2D" uid="uid://oeikw0pjnxar" path="res://sprites/Tilesets/2 - Autumn Forest/Background parts/1 - Leaf_top.png" id="6_t43jw"]
+[ext_resource type="PackedScene" uid="uid://bfemkv0rj38aw" path="res://entities/player/Player.tscn" id="7_iu14f"]
+[ext_resource type="Texture2D" uid="uid://bgux66avhph8o" path="res://sprites/Tilesets/2 - Autumn Forest/Terrain (16 x 16).png" id="7_ryjje"]
+[ext_resource type="Texture2D" uid="uid://cyndcdb5pimij" path="res://sprites/Tilesets/2 - Autumn Forest/Autumn_entities (16 x 16).png" id="8_q3k16"]
+[ext_resource type="PackedScene" uid="uid://dk6bijfigp8ej" path="res://entities/NextLevel.tscn" id="10_gljgr"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gljgr"]
+texture = ExtResource("7_ryjje")
+3:1/0 = 0
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:1/0/physics_layer_0/polygon_0/one_way = true
+4:1/0 = 0
+4:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:1/0/physics_layer_0/polygon_0/one_way = true
+5:1/0 = 0
+5:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:1/0/physics_layer_0/polygon_0/one_way = true
+11:1/0 = 0
+11:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+11:1/0/physics_layer_0/polygon_0/one_way = true
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+11:2/0 = 0
+1:3/0 = 0
+1:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:3/0 = 0
+2:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:3/0/physics_layer_0/polygon_0/one_way = true
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+6:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:3/0/physics_layer_0/polygon_0/one_way = true
+7:3/0 = 0
+7:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:3/0 = 0
+9:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:3/0/physics_layer_0/polygon_0/one_way = true
+10:3/0 = 0
+10:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+10:3/0/physics_layer_0/polygon_0/one_way = true
+11:3/0 = 0
+12:3/0 = 0
+12:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+12:3/0/physics_layer_0/polygon_0/one_way = true
+13:3/0 = 0
+13:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+13:3/0/physics_layer_0/polygon_0/one_way = true
+15:3/0 = 0
+15:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+15:3/0/physics_layer_0/polygon_0/one_way = true
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+11:4/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+11:5/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+4:8/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_t43jw"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_gljgr")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0xt8v"]
+texture = ExtResource("8_q3k16")
+9:1/0 = 0
+10:1/0 = 0
+11:1/0 = 0
+15:1/0 = 0
+16:1/0 = 0
+17:1/0 = 0
+9:3/0 = 0
+10:3/0 = 0
+11:3/0 = 0
+12:3/0 = 0
+14:3/0 = 0
+15:3/0 = 0
+16:3/0 = 0
+17:3/0 = 0
+18:3/0 = 0
+14:4/0 = 0
+16:4/0 = 0
+18:4/0 = 0
+1:5/0 = 0
+3:5/0 = 0
+1:1/size_in_atlas = Vector2i(3, 3)
+1:1/0 = 0
+5:1/size_in_atlas = Vector2i(3, 3)
+5:1/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_5ictq"]
+sources/0 = SubResource("TileSetAtlasSource_0xt8v")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gljgr"]
+
+[node name="Level2" type="Node2D"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.1, 0.1)
+motion_mirroring = Vector2(288, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+texture_repeat = 2
+texture = ExtResource("1_cd1b4")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 576, 208)
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.2, 0.2)
+motion_mirroring = Vector2(288, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+texture_repeat = 2
+texture = ExtResource("2_iu14f")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 576, 208)
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.3, 0.3)
+motion_mirroring = Vector2(288, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer3"]
+texture_repeat = 2
+texture = ExtResource("3_ryjje")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 576, 208)
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.4, 0.4)
+motion_mirroring = Vector2(288, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer4"]
+texture_repeat = 2
+texture = ExtResource("4_q3k16")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 576, 208)
+
+[node name="ParallaxLayer5" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.5, 0.5)
+motion_mirroring = Vector2(288, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer5"]
+texture_repeat = 2
+texture = ExtResource("5_gljgr")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 576, 208)
+
+[node name="ParallaxLayer6" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.6, 0.6)
+motion_mirroring = Vector2(288, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer6"]
+texture_repeat = 2
+texture = ExtResource("6_t43jw")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 576, 208)
+
+[node name="Map" type="Node" parent="."]
+
+[node name="Terrain" type="TileMapLayer" parent="Map"]
+tile_map_data = PackedByteArray("AAAAAAwAAAAEAAEAAAABAAwAAAAEAAEAAAACAAwAAAAEAAEAAAADAAwAAAAEAAEAAAAEAAwAAAAEAAEAAAAFAAwAAAAEAAEAAAAGAAwAAAAEAAEAAAAHAAwAAAAEAAEAAAAIAAwAAAAEAAEAAAAJAAwAAAAEAAEAAAAKAAwAAAAEAAEAAAALAAwAAAAEAAEAAAAMAAwAAAAEAAEAAAANAAwAAAAEAAEAAAAOAAwAAAAEAAEAAAAPAAwAAAAEAAEAAAAQAAwAAAAEAAEAAAARAAwAAAAEAAEAAAASAAwAAAAEAAEAAAATAAwAAAAEAAEAAAAUAAwAAAAEAAEAAAAVAAwAAAAEAAEAAAAWAAwAAAAEAAEAAAAXAAwAAAAEAAEAAAAYAAwAAAAEAAEAAAAZAAwAAAAEAAEAAAAaAAwAAAAEAAEAAAAbAAwAAAAEAAEAAAAcAAwAAAAEAAEAAAAdAAwAAAAEAAEAAAAeAAwAAAAEAAEAAAAfAAwAAAAEAAEAAAAgAAwAAAAEAAEAAAAhAAwAAAAEAAEAAAAiAAwAAAAEAAEAAAAjAAwAAAAEAAEAAAAkAAwAAAAEAAEAAAAlAAwAAAAEAAEAAAAmAAwAAAAEAAEAAAAnAAwAAAAEAAEAAAAoAAwAAAAEAAEAAAApAAwAAAAEAAEAAAAqAAwAAAAEAAEAAAArAAwAAAAEAAEAAAAsAAwAAAAEAAEAAAAtAAwAAAAEAAEAAAAuAAwAAAAEAAEAAAAvAAwAAAAEAAEAAAAwAAwAAAAEAAEAAAAxAAwAAAAEAAEAAAAyAAwAAAAEAAEAAAAzAAwAAAAEAAEAAAA0AAwAAAAEAAEAAAA1AAwAAAAEAAEAAAA2AAwAAAAEAAEAAAA3AAwAAAAEAAEAAAA4AAwAAAAEAAEAAAA5AAwAAAAEAAEAAAA6AAwAAAAEAAEAAAA7AAwAAAAEAAEAAAA8AAwAAAAEAAEAAAA9AAwAAAAEAAEAAAA+AAwAAAAEAAEAAAA/AAwAAAAEAAEAAABAAAwAAAAEAAEAAABBAAwAAAAEAAEAAABCAAwAAAAEAAEAAABDAAwAAAAEAAEAAABEAAwAAAAEAAEAAABFAAwAAAAEAAEAAABGAAwAAAAEAAEAAABHAAwAAAAEAAEAAABIAAwAAAAEAAEAAABJAAwAAAAEAAEAAABKAAwAAAAEAAEAAABLAAwAAAAEAAEAAABMAAwAAAAEAAEAAABNAAwAAAAEAAEAAABOAAwAAAAEAAEAAABPAAwAAAAEAAEAAABQAAwAAAAEAAEAAABRAAwAAAAEAAEAAABSAAwAAAAEAAEAAABTAAwAAAAEAAEAAABUAAwAAAAEAAEAAABVAAwAAAAEAAEAAABWAAwAAAAEAAEAAABXAAwAAAAEAAEAAABYAAwAAAAEAAEAAABZAAwAAAAEAAEAAABaAAwAAAAEAAEAAABbAAwAAAAEAAEAAABcAAwAAAAEAAEAAAA=")
+tile_set = SubResource("TileSet_t43jw")
+
+[node name="Decorations" type="TileMapLayer" parent="Map"]
+tile_set = SubResource("TileSet_5ictq")
+
+[node name="Player" parent="." instance=ExtResource("7_iu14f")]
+position = Vector2(23, 177)
+
+[node name="NextLevel" parent="." instance=ExtResource("10_gljgr")]
+position = Vector2(207, 179)
+nextlevel = "Level3"
+
+[node name="CollisionShape2D" parent="NextLevel" index="0"]
+shape = SubResource("RectangleShape2D_gljgr")
+
+[editable path="NextLevel"]

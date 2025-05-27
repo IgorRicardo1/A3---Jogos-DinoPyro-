@@ -117,7 +117,7 @@ size = Vector2(41, 16.5)
 size = Vector2(34, 14.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_twyc1"]
-size = Vector2(28.75, 9)
+size = Vector2(28.75, 17.5)
 
 [node name="Enemy" type="CharacterBody2D"]
 collision_layer = 2
@@ -156,7 +156,7 @@ shape = SubResource("RectangleShape2D_msovg")
 [node name="Head" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Head"]
-position = Vector2(1, -5)
+position = Vector2(1, -9.25)
 shape = SubResource("RectangleShape2D_twyc1")
 
 [connection signal="body_entered" from="Hitbox" to="." method="_on_hitbox_body_entered"]

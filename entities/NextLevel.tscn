@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dk6bijfigp8ej"]
+
+[ext_resource type="Script" uid="uid://dpt74vry0px4n" path="res://scripts/next_level.gd" id="1_vehim"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bhioi"]
+
+[node name="NextLevel" type="Area2D"]
+script = ExtResource("1_vehim")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_bhioi")
+debug_color = Color(0, 0.637341, 0.393344, 0.42)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

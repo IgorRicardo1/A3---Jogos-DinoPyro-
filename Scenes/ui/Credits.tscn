@@ -3,6 +3,8 @@
 [ext_resource type="Script" uid="uid://btesvcpnrk4hr" path="res://scripts/credits.gd" id="1_fljx6"]
 
 [node name="Credits" type="Control"]
+clip_contents = true
+custom_minimum_size = Vector2(288, 208)
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -12,14 +14,26 @@ grow_vertical = 2
 script = ExtResource("1_fljx6")
 
 [node name="Panel" type="Panel" parent="."]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+custom_minimum_size = Vector2(288, 208)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+clip_contents = true
+custom_minimum_size = Vector2(288, 208)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 75.0
+offset_bottom = 10.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.791822, 0.954997)
 alignment = 1
 
 [node name="CreditsTitleLabel" type="Label" parent="VBoxContainer"]

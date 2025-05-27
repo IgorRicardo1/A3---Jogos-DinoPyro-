@@ -1,0 +1,147 @@
+[gd_scene load_steps=13 format=4 uid="uid://dl3lucmxc72tr"]
+
+[ext_resource type="Texture2D" uid="uid://bph0ujubutpck" path="res://sprites/Tilesets/4 - Winter World/Background parts/3 - Big_mountain_BG.png" id="1_nrhky"]
+[ext_resource type="Texture2D" uid="uid://d0o8dusm7cq1o" path="res://sprites/Tilesets/4 - Winter World/Background parts/2 - Smaller_mountains.png" id="2_3tfdw"]
+[ext_resource type="Texture2D" uid="uid://dcwrhh1fru64q" path="res://sprites/Tilesets/4 - Winter World/Background parts/1 - Snowy_foreground_area.png" id="3_y4wdv"]
+[ext_resource type="Texture2D" uid="uid://b6m8cg8irljao" path="res://sprites/Tilesets/4 - Winter World/Terrain (16 x 16).png" id="4_y4wdv"]
+[ext_resource type="Texture2D" uid="uid://bt76m61vbh5a2" path="res://sprites/Tilesets/4 - Winter World/Winter_entities (16 x 16).png" id="5_8jiwo"]
+[ext_resource type="PackedScene" uid="uid://bfemkv0rj38aw" path="res://entities/player/Player.tscn" id="6_8jiwo"]
+[ext_resource type="PackedScene" uid="uid://dk6bijfigp8ej" path="res://entities/NextLevel.tscn" id="7_8aixy"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8aixy"]
+texture = ExtResource("4_y4wdv")
+3:1/0 = 0
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:1/0/physics_layer_0/polygon_0/one_way = true
+4:1/0 = 0
+4:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:1/0/physics_layer_0/polygon_0/one_way = true
+5:1/0 = 0
+5:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:1/0/physics_layer_0/polygon_0/one_way = true
+11:1/0 = 0
+11:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+11:1/0/physics_layer_0/polygon_0/one_way = true
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+11:2/0 = 0
+1:3/0 = 0
+1:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:3/0 = 0
+2:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:3/0/physics_layer_0/polygon_0/one_way = true
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+6:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:3/0/physics_layer_0/polygon_0/one_way = true
+7:3/0 = 0
+7:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:3/0 = 0
+9:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:3/0/physics_layer_0/polygon_0/one_way = true
+10:3/0 = 0
+10:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+10:3/0/physics_layer_0/polygon_0/one_way = true
+11:3/0 = 0
+12:3/0 = 0
+12:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+12:3/0/physics_layer_0/polygon_0/one_way = true
+13:3/0 = 0
+13:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+13:3/0/physics_layer_0/polygon_0/one_way = true
+15:3/0 = 0
+15:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+15:3/0/physics_layer_0/polygon_0/one_way = true
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+11:4/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+11:5/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+4:8/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_4kqg6"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_8aixy")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_va4pb"]
+texture = ExtResource("5_8jiwo")
+9:1/0 = 0
+10:1/0 = 0
+11:1/0 = 0
+9:3/0 = 0
+10:3/0 = 0
+11:3/0 = 0
+12:3/0 = 0
+1:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+1:1/size_in_atlas = Vector2i(3, 3)
+1:1/0 = 0
+5:1/size_in_atlas = Vector2i(3, 3)
+5:1/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_oseao"]
+sources/0 = SubResource("TileSetAtlasSource_va4pb")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4kqg6"]
+
+[node name="Level4" type="Node2D"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.1, 0.1)
+motion_mirroring = Vector2(288, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+texture = ExtResource("1_nrhky")
+centered = false
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.3, 0.3)
+motion_mirroring = Vector2(288, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+texture = ExtResource("2_3tfdw")
+centered = false
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.5, 0.5)
+motion_mirroring = Vector2(288, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer3"]
+texture = ExtResource("3_y4wdv")
+centered = false
+
+[node name="map" type="Node" parent="."]
+
+[node name="Terrain" type="TileMapLayer" parent="map"]
+tile_map_data = PackedByteArray("AAAAAAwAAAAEAAEAAAABAAwAAAAEAAEAAAACAAwAAAAEAAEAAAADAAwAAAAEAAEAAAAEAAwAAAAEAAEAAAAFAAwAAAAEAAEAAAAGAAwAAAAEAAEAAAAHAAwAAAAEAAEAAAAIAAwAAAAEAAEAAAAJAAwAAAAEAAEAAAAKAAwAAAAEAAEAAAALAAwAAAAEAAEAAAAMAAwAAAAEAAEAAAANAAwAAAAEAAEAAAAOAAwAAAAEAAEAAAAPAAwAAAAEAAEAAAAQAAwAAAAEAAEAAAARAAwAAAAEAAEAAAASAAwAAAAEAAEAAAATAAwAAAAEAAEAAAAUAAwAAAAEAAEAAAAVAAwAAAAEAAEAAAAWAAwAAAAEAAEAAAAXAAwAAAAEAAEAAAAYAAwAAAAEAAEAAAAZAAwAAAAEAAEAAAAaAAwAAAAEAAEAAAAbAAwAAAAEAAEAAAAcAAwAAAAEAAEAAAAdAAwAAAAEAAEAAAAeAAwAAAAEAAEAAAAfAAwAAAAEAAEAAAAgAAwAAAAEAAEAAAAhAAwAAAAEAAEAAAAiAAwAAAAEAAEAAAAjAAwAAAAEAAEAAAAkAAwAAAAEAAEAAAAlAAwAAAAEAAEAAAAmAAwAAAAEAAEAAAAnAAwAAAAEAAEAAAAoAAwAAAAEAAEAAAApAAwAAAAEAAEAAAAqAAwAAAAEAAEAAAArAAwAAAAEAAEAAAAsAAwAAAAEAAEAAAAtAAwAAAAEAAEAAAAuAAwAAAAEAAEAAAAvAAwAAAAEAAEAAAAwAAwAAAAEAAEAAAAxAAwAAAAEAAEAAAAyAAwAAAAEAAEAAAAzAAwAAAAEAAEAAAA0AAwAAAAEAAEAAAA1AAwAAAAEAAEAAAA2AAwAAAAEAAEAAAA3AAwAAAAEAAEAAAA4AAwAAAAEAAEAAAA5AAwAAAAEAAEAAAA6AAwAAAAEAAEAAAA7AAwAAAAEAAEAAAA8AAwAAAAEAAEAAAA9AAwAAAAEAAEAAAA+AAwAAAAEAAEAAAA/AAwAAAAEAAEAAABAAAwAAAAEAAEAAABBAAwAAAAEAAEAAABCAAwAAAAEAAEAAABDAAwAAAAEAAEAAABEAAwAAAAEAAEAAABFAAwAAAAEAAEAAABGAAwAAAAEAAEAAABHAAwAAAAEAAEAAABIAAwAAAAEAAEAAABJAAwAAAAEAAEAAABKAAwAAAAEAAEAAABLAAwAAAAEAAEAAABMAAwAAAAEAAEAAABNAAwAAAAEAAEAAABOAAwAAAAEAAEAAABPAAwAAAAEAAEAAABQAAwAAAAEAAEAAABRAAwAAAAEAAEAAABSAAwAAAAEAAEAAABTAAwAAAAEAAEAAABUAAwAAAAEAAEAAABVAAwAAAAEAAEAAABWAAwAAAAEAAEAAABXAAwAAAAEAAEAAABYAAwAAAAEAAEAAABZAAwAAAAEAAEAAABaAAwAAAAEAAEAAABbAAwAAAAEAAEAAABcAAwAAAAEAAEAAABdAAwAAAAEAAEAAABeAAwAAAAEAAEAAABfAAwAAAAEAAEAAABgAAwAAAAEAAEAAABhAAwAAAAEAAEAAABiAAwAAAAEAAEAAABjAAwAAAAEAAEAAABkAAwAAAAEAAEAAABlAAwAAAAEAAEAAABmAAwAAAAEAAEAAABnAAwAAAAEAAEAAABoAAwAAAAEAAEAAABpAAwAAAAEAAEAAABqAAwAAAAEAAEAAABrAAwAAAAEAAEAAABsAAwAAAAEAAEAAABtAAwAAAAEAAEAAABuAAwAAAAEAAEAAABvAAwAAAAEAAEAAABwAAwAAAAEAAEAAABxAAwAAAAEAAEAAAByAAwAAAAEAAEAAABzAAwAAAAEAAEAAAB0AAwAAAAEAAEAAAB1AAwAAAAEAAEAAAA=")
+tile_set = SubResource("TileSet_4kqg6")
+
+[node name="Decorations" type="TileMapLayer" parent="map"]
+tile_set = SubResource("TileSet_oseao")
+
+[node name="Player" parent="." instance=ExtResource("6_8jiwo")]
+position = Vector2(33, 177)
+
+[node name="NextLevel" parent="." instance=ExtResource("7_8aixy")]
+position = Vector2(276, 181)
+
+[node name="CollisionShape2D" parent="NextLevel" index="0"]
+shape = SubResource("RectangleShape2D_4kqg6")
+
+[editable path="NextLevel"]

@@ -7,8 +7,10 @@
 script = ExtResource("1_1gbqs")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 15.0
+offset_top = 2.0
+offset_right = 71.0
+offset_bottom = 42.0
 
 [node name="TextureRect" type="TextureRect" parent="HBoxContainer"]
 layout_mode = 2

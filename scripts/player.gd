@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
-const SPEED := 200.0
-const JUMP_FORCE := -400.0
+const SPEED := 150.0
+const JUMP_FORCE := -300.0
 const GRAVITY := 900.0
 var is_knocked_back := false
 var knockback_timer := 0.0
