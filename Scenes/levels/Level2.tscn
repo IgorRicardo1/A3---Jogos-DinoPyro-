@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=4 uid="uid://qrhsmtg2fjfx"]
+[gd_scene load_steps=27 format=4 uid="uid://qrhsmtg2fjfx"]
 
 [ext_resource type="Texture2D" uid="uid://ciigk2hu4q3mc" path="res://sprites/Tilesets/2 - Autumn Forest/Background parts/6 - Distant_trees.png" id="1_cd1b4"]
 [ext_resource type="Texture2D" uid="uid://bgo3dlhqr28el" path="res://sprites/Tilesets/2 - Autumn Forest/Background parts/5 - Tree_row_BG_2.png" id="2_iu14f"]
@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://dk6bijfigp8ej" path="res://entities/NextLevel.tscn" id="10_gljgr"]
 [ext_resource type="PackedScene" uid="uid://d218yv00l3w8v" path="res://entities/enemies/enemy.tscn" id="11_t43jw"]
 [ext_resource type="PackedScene" uid="uid://bdc7wk4j5sgak" path="res://Scenes/ui/HUD.tscn" id="12_0xt8v"]
+[ext_resource type="PackedScene" uid="uid://blh8llte4ewcq" path="res://entities/Danger.tscn" id="13_5ictq"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_gljgr"]
 tile_data = PackedInt32Array(0, 196608, 1, 65536, 196608, 2, 131072, 196608, 2, 196608, 196608, 2, 1, 262144, 1, 65537, 262144, 2, 131073, 262144, 2, 196609, 262144, 2, 2, 327680, 1, 65538, 327680, 2, 131074, 327680, 2, 196610, 327680, 2)
@@ -149,6 +150,15 @@ size = Vector2(20, 194)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_t43jw"]
 size = Vector2(13, 216)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1ols8"]
+size = Vector2(244, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kx2o3"]
+size = Vector2(172, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a8dr6"]
+size = Vector2(288, 20)
+
 [node name="Level2" type="Node2D"]
 metadata/_edit_vertical_guides_ = [2520.0]
 
@@ -234,7 +244,7 @@ tile_set = SubResource("TileSet_5ictq")
 
 [node name="Player" parent="." instance=ExtResource("7_iu14f")]
 z_index = 2
-position = Vector2(23, 177)
+position = Vector2(17, 179)
 
 [node name="Camera2D" parent="Player" index="2"]
 limit_top = -50
@@ -271,5 +281,32 @@ position = Vector2(1847, 160)
 [node name="Enemy5" parent="." instance=ExtResource("11_t43jw")]
 position = Vector2(2270, 161)
 
+[node name="Danger" parent="." instance=ExtResource("13_5ictq")]
+position = Vector2(573, 209)
+
+[node name="CollisionShape2D" parent="Danger" index="0"]
+position = Vector2(115, 0)
+shape = SubResource("RectangleShape2D_1ols8")
+
+[node name="Danger2" parent="." instance=ExtResource("13_5ictq")]
+position = Vector2(1484, 212)
+
+[node name="CollisionShape2D" parent="Danger2" index="0"]
+position = Vector2(65, 1)
+shape = SubResource("RectangleShape2D_kx2o3")
+
+[node name="Danger3" parent="." instance=ExtResource("13_5ictq")]
+position = Vector2(2217, 211)
+
+[node name="Danger4" parent="." instance=ExtResource("13_5ictq")]
+position = Vector2(2375, 213)
+
+[node name="CollisionShape2D" parent="Danger4" index="0"]
+position = Vector2(134, 0)
+shape = SubResource("RectangleShape2D_a8dr6")
+
 [editable path="Player"]
 [editable path="NextLevel"]
+[editable path="Danger"]
+[editable path="Danger2"]
+[editable path="Danger4"]

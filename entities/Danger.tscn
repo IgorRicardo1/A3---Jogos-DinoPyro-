@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://blh8llte4ewcq"]
+
+[ext_resource type="Script" uid="uid://bt8xw83crxa87" path="res://scripts/danger.gd" id="1_xlwtr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ktv0n"]
+
+[node name="Danger" type="Area2D"]
+script = ExtResource("1_xlwtr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_ktv0n")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

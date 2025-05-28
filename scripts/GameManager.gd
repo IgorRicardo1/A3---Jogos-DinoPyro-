@@ -11,5 +11,8 @@ func next_level():
 		get_tree().change_scene_to_file("res://scenes/levels/Level%d.tscn" % current_level)
 
 func restart_game():
+	call_deferred("restart_seguro")
+
+func restart_seguro():
 	current_level = 1
 	get_tree().change_scene_to_file("res://scenes/levels/Level1.tscn")

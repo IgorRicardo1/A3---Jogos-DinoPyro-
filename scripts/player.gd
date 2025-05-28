@@ -21,6 +21,9 @@ func take_damage(from_position: Vector2):
 		hud.take_damage()
 	apply_knockback(from_position)
 
+func die():
+	GameManager.restart_game()
+
 func _physics_process(delta):
 	if is_knocked_back:
 		knockback_timer -= delta

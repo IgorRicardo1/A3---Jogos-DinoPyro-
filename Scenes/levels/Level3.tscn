@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=4 uid="uid://kmb168ywcmcd"]
+[gd_scene load_steps=27 format=4 uid="uid://kmb168ywcmcd"]
 
 [ext_resource type="Texture2D" uid="uid://css6vhqlmte5" path="res://sprites/Tilesets/3 - Tropics/Background parts/5 - Sky_color.png" id="1_1bg2i"]
 [ext_resource type="Texture2D" uid="uid://cj3isbh7jr2bw" path="res://sprites/Tilesets/3 - Tropics/Background parts/4 - Background_clouds.png" id="2_72o6t"]
@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://dk6bijfigp8ej" path="res://entities/NextLevel.tscn" id="9_snl0g"]
 [ext_resource type="PackedScene" uid="uid://d218yv00l3w8v" path="res://entities/enemies/enemy.tscn" id="10_jnewo"]
 [ext_resource type="PackedScene" uid="uid://bdc7wk4j5sgak" path="res://Scenes/ui/HUD.tscn" id="10_xvypa"]
+[ext_resource type="PackedScene" uid="uid://blh8llte4ewcq" path="res://entities/Danger.tscn" id="12_luq0l"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_8fnmi"]
 animations = [{
@@ -155,6 +156,12 @@ size = Vector2(20, 163.5)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jnewo"]
 size = Vector2(20, 216)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tobbh"]
+size = Vector2(1378, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cqcly"]
+size = Vector2(718, 20)
+
 [node name="Level3" type="Node2D"]
 metadata/_edit_vertical_guides_ = [2670.0]
 
@@ -224,7 +231,7 @@ tile_map_data = PackedByteArray("AAAHAAsAAAAMAAUAAAAHAAwAAAAMAAYAAAAIAAsAAAAMAAU
 tile_set = SubResource("TileSet_luq0l")
 
 [node name="NextLevel" parent="." instance=ExtResource("9_snl0g")]
-position = Vector2(2662, 165)
+position = Vector2(2674, 163)
 nextlevel = "Level4"
 
 [node name="CollisionShape2D" parent="NextLevel" index="0"]
@@ -264,5 +271,21 @@ position = Vector2(1682, 161)
 [node name="Enemy6" parent="." instance=ExtResource("10_jnewo")]
 position = Vector2(2270, -96)
 
+[node name="Danger" parent="." instance=ExtResource("12_luq0l")]
+position = Vector2(239, 191)
+
+[node name="CollisionShape2D" parent="Danger" index="0"]
+position = Vector2(679, 0)
+shape = SubResource("RectangleShape2D_tobbh")
+
+[node name="Danger2" parent="." instance=ExtResource("12_luq0l")]
+position = Vector2(1975, 190)
+
+[node name="CollisionShape2D" parent="Danger2" index="0"]
+position = Vector2(349, 0)
+shape = SubResource("RectangleShape2D_cqcly")
+
 [editable path="NextLevel"]
 [editable path="Player"]
+[editable path="Danger"]
+[editable path="Danger2"]
