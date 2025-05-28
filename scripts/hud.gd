@@ -9,7 +9,7 @@ func _ready():
 	update_hearts()
 
 func update_hearts():
-	for i in heart_container.get_child_count():
+	for i in range(heart_container.get_child_count()):
 		heart_container.get_child(i).visible = i < current_life
 
 func take_damage():
