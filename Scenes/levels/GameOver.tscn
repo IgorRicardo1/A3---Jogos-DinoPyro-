@@ -1,0 +1,44 @@
+[gd_scene load_steps=3 format=3 uid="uid://dm5nui7xitkhg"]
+
+[ext_resource type="Script" uid="uid://dbxujvigpufbp" path="res://scripts/gameover.gd" id="1_1cncf"]
+[ext_resource type="Texture2D" uid="uid://dijwhwn5m4782" path="res://sprites/gameover.png" id="2_d2fmh"]
+
+[node name="GameOver" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1cncf")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "Parabéns! Você terminou o jogo!"
+horizontal_alignment = 1
+
+[node name="ButtonRetry" type="Button" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "Jogar novamente!"
+
+[node name="ButtonExit" type="Button" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "Sair"
+
+[node name="Gameover" type="Sprite2D" parent="."]
+position = Vector2(143.5, 102.5)
+scale = Vector2(0.301758, 0.225586)
+texture = ExtResource("2_d2fmh")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(144, 96)
+scale = Vector2(0.281006, 0.193848)
+texture = ExtResource("2_d2fmh")
